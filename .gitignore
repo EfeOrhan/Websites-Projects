@@ -1,0 +1,11 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Env files
+.env
+
+# Node (ileride lazım olabilir)
+node_modules/
