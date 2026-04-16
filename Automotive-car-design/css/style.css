@@ -48,7 +48,7 @@ p{
 /* navbar */
 nav{
     width: 100%;
-    /* background-color: var(--dark-color); */
+    background-color: var(--dark-color);
     /* background-color: black; */
     /* background: url('../img/Rua.jpg'); */
     background-position: center;
