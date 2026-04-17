@@ -48,11 +48,10 @@ p{
 /* navbar */
 nav{
     width: 100%;
-    background-color: var(--dark-color);
-    /* background-color: black; */
-    /* background: url('../img/Rua.jpg'); */
+    background: url('../img/car-2.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    
 }
 
 nav .container{
