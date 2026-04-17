@@ -53,6 +53,7 @@ p{
     padding: 1rem;
 }
 
+/* header  */
 header{
     background: url(../img/car-bg.jpg);
     background-size: cover;
@@ -103,7 +104,7 @@ nav ul li a{
 nav ul li a:hover{
     opacity: .7;
     cursor: pointer;
-    border-bottom: 2px solid var(--light-color);
+    border-bottom: 2px solid var(--primary-color);
 
 }
 
@@ -118,48 +119,41 @@ nav ul li a:hover{
     border: none !important;
 }
 
+/* section */
 
-section {
+.card-section{
     display: flex;
-    align-items: stretch; 
-    justify-content: center; 
-    gap: 4rem; 
-    max-width: var(--max-width); 
-    margin: 5rem auto; 
-    padding: 2rem;
-}
-
-.content-left {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    background-color: white;
-    padding: 4rem;
-    border-radius: 2rem; 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); 
+    align-items: stretch;
+    gap: 40px;
+    margin: 50px auto;
+
 }
 
-.content-left h3 {
-    font-size: 4rem;
-    color: var(--primary-color);
+.card{
+    flex: 1;
+    max-width: 450px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.card-section h3{
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
     margin-bottom: 2rem;
 }
 
-.content-right {
-    flex: 1; 
-    display: flex;
-    border-radius: 2rem;
-    overflow: hidden; 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-}
-
-.content-right img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-
+/* footer */
 footer{
     background-color: var(--dark-color);
     color: var(--light-color);
