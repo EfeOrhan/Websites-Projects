@@ -5,8 +5,52 @@
 }
 a{
     text-decoration: none;
-    color: #fff;
 }
 html{
     font-family:"Roboto", sans-serif;
+}
+.container{
+    padding: 0 2rem;
+}
+
+/* navbar */
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9deff;
+}
+nav .container img{
+    width: 200px;
+}
+nav .container span{
+    display: flex;
+    align-items: center;
+}
+nav .container span{
+    display: flex;
+    gap: 1rem;
+}
+nav .container .book{
+    display: block;
+    background-color: #313092;
+    padding: .5rem;
+    color: #fff;
+    border-radius: .2rem;
+}
+nav .container ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+nav .container ul li a{
+    text-decoration: none;
+    color: #313092;
+    font-size: 1rem;
+    font-weight: 200;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+nav .container ul li a:hover{
+    border-bottom: 1px solid #313092;
 }
