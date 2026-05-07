@@ -12,6 +12,12 @@ html{
 .container{
     padding: 0 2rem;
 }
+.active{
+    background-color: #313092;
+    color: #fff !important;
+    padding: .5rem;
+    border-radius: 5px;
+}
 
 /* navbar */
 nav .container{
@@ -53,4 +59,35 @@ nav .container ul li a{
 }
 nav .container ul li a:hover{
     border-bottom: 1px solid #313092;
+}
+
+/* main */
+
+main .container{
+    width: 100%;
+    padding: 5rem;
+    align-items: center;
+    text-align: center;
+}
+main .container .border{
+    width: 300px;
+    border: 2px solid #313092;
+    margin: 2rem auto;
+}
+main .container h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #313092;
+    
+}
+main .container .content{
+    width: 800px;
+    align-items: center;
+    margin: 0 auto;
+}
+main .container .content p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    align-self: center;
+
 }
