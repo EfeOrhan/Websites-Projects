@@ -3,91 +3,172 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: "Roboto", sans-serif;
+    color: #333;
+}
 a{
     text-decoration: none;
 }
-html{
-    font-family:"Roboto", sans-serif;
-}
+
+/* utilites */
+
 .container{
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 0 2rem;
 }
-.active{
-    background-color: #313092;
-    color: #fff !important;
-    padding: .5rem;
+
+/* buttons */
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
     border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* navbar */
-nav .container{
+.btn-primary{
+    background-color: #313092;
+    color: #fff;
+    border: 2px solid #313092;
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: #313092;
+}
+.btn-secondary{
+    background-color: transparent;
+    color: #313092;
+    border: 2px solid #313092;
+}
+.btn-secondary:hover{
+    background-color: #313092;
+    color: #fff;
+}
+
+/* header & navbar */
+
+header{
+    background-color: #e9deff;
+    padding: 1rem 0;
+}
+
+.navbar-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e9deff;
 }
-nav .container img{
-    width: 200px;
-}
-nav .container span{
+.nav-left, .nav-right{
+    flex: 1;
     display: flex;
     align-items: center;
 }
-nav .container span{
+.nav-left{
+    justify-content: flex-start;
+}
+.nav-right{
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+.logo img{
+    width: 180px;
+    display: block;
+}
+.nav-menu{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 1.2rem;
+}
+.nav-menu li{
+    display: inline-block;
+}
+.nav-menu li a{
+    color: #313092;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    white-space: nowrap;
+}
+.nav-menu li a:hover{
+    border-bottom: 2px solid #313092;
+}
+.nav-menu li a.active{
+    background-color: #313092;
+    color: #fff;
+    border-radius: 5px;
+    border-bottom: none;
+}
+
+.nav-actions{
+    display: flex;
+    align-items: center;
     gap: 1rem;
 }
-nav .container .book{
-    display: block;
-    background-color: #313092;
-    padding: .5rem;
-    color: #fff;
-    border-radius: .2rem;
-}
-nav .container ul{
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-nav .container ul li a{
-    text-decoration: none;
+.nav-actions a:not(.btn-book){
     color: #313092;
-    font-size: 1rem;
-    font-weight: 200;
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
 }
-nav .container ul li a:hover{
-    border-bottom: 1px solid #313092;
+.nav-actions a:not(.btn-book):hover{
+    transform: scale(1.1);
+}
+.btn-book{
+    background-color: #313092;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+.btn-book:hover{
+    background-color: #1e1d5e;
 }
 
 /* main */
 
-main .container{
-    width: 100%;
-    padding: 5rem;
-    align-items: center;
+.hero{
+    padding: 5rem 0;
     text-align: center;
 }
-main .container .border{
-    width: 300px;
-    border: 2px solid #313092;
-    margin: 2rem auto;
-}
-main .container h2{
+.hero h2{
     font-size: 2.5rem;
     font-weight: 900;
     color: #313092;
-    
-}
-main .container .content{
-    width: 800px;
-    align-items: center;
+    max-width: 900px;
     margin: 0 auto;
 }
-main .container .content p{
+.hero .divider{
+    width: 150px;
+    height: 4px;
+    background-color: #313092;
+    margin: 2rem auto;
+    border-radius: 2px;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.hero-content p{
     font-size: 1.2rem;
     font-weight: 300;
-    align-self: center;
-
+    line-height: 1.6;
+    color: #555;
+}
+.btn-group{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
 }
