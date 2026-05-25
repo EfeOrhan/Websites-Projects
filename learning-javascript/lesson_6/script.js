@@ -27,7 +27,7 @@ let sonuc;
 const parentElement = document.querySelector("ul");
 console.log(parentElement);
 
-const firstElement = parentElement.querySelector("li");
+const firstElement = parentElement.querySelector("li"); 
 firstElement.style.color = "blue"
 
 console.log(firstElement);
