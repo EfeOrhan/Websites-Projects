@@ -29,5 +29,5 @@ sonuc = document.links[0].className="btn btn-sm btn-primary active";
 
 sonuc = document.images;
 sonuc = document.images[0];
-
+ 
 console.log(sonuc);
