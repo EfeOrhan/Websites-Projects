@@ -19,5 +19,6 @@ This repository contains practices and exercises for learning JavaScript. You ca
 * **[Lesson 16]** - event objects
 * **[Lesson 17]** - keyboard events
 * **[Lesson 18]** - input events
+* **[Lesson 19]** - form data
 
 ---
